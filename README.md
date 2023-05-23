@@ -1,3 +1,7 @@
-# LOLBOX
+# react tauri template
 
-league of legends game helper
+- react
+- tauri
+- typescript
+- vite
+- antd

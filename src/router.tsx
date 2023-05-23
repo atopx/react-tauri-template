@@ -1,8 +1,8 @@
 import Home from "./views/home";
 
 import {
-    CarryOutOutlined,
-    PieChartOutlined,
+    ScheduleOutlined,
+    DashboardOutlined,
     SettingOutlined,
 } from "@ant-design/icons";
 
@@ -19,19 +19,13 @@ const routes: Array<IRoute> = [
         path: "/",
         component: <Home />,
         label: "首页",
-        icon: <PieChartOutlined />,
+        icon: <DashboardOutlined />,
     },
     {
-        path: "/featue",
+        path: "/record",
         component: <Home />,
-        label: "助手",
-        icon: <CarryOutOutlined />,
-    },
-    {
-        path: "/statistic",
-        component: <Home />,
-        label: "统计",
-        icon: <SettingOutlined />,
+        label: "任务",
+        icon: <ScheduleOutlined />,
     },
     {
         path: "/setting",

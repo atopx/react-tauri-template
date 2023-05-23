@@ -1,9 +1,9 @@
 [package]
-name = "lolbox"
+name = "react-tauri-template"
 version = "0.1.0"
-description = "league of legends game helper"
+description = "tauri+vite+react+typescript+antd"
 authors = ["atopx"]
-repository = "https://github.com/atopx/lolbox"
+repository = "https://github.com/atopx/react-tauri-template"
 edition = "2021"
 
 
@@ -14,9 +14,6 @@ tauri-build = { version = "1.2", features = [] }
 tauri = { version = "1.2", features = ["clipboard-all", "shell-open"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-strum = { version = "0.24", features = ["derive"] }
 
 [features]
-# this feature is used for production builds or when `devPath` points to the filesystem
-# DO NOT REMOVE!!
 custom-protocol = ["tauri/custom-protocol"]
