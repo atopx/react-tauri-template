@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "superbox",
-    "version": "0.0.0"
+    "productName": "lolbox",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
@@ -32,7 +32,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "top.itmeng.superbox",
+      "identifier": "top.itmeng.lolbox",
       "targets": "all"
     },
     "security": {
@@ -46,7 +46,7 @@
         "label": "main",
         "fullscreen": false,
         "resizable": true,
-        "title": "超级工具箱",
+        "title": "联盟秘书",
         "width": 1300,
         "height": 900,
         "url": "index.html"

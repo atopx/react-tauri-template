@@ -1,13 +1,11 @@
 [package]
-name = "superbox"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+name = "lolbox"
+version = "0.1.0"
+description = "league of legends game helper"
+authors = ["atopx"]
+repository = "https://github.com/atopx/lolbox"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
 tauri-build = { version = "1.2", features = [] }
