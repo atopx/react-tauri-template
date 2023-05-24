@@ -1,4 +1,4 @@
-import { defineConfig } from '@umijs/max';
+import {defineConfig} from '@umijs/max';
 
 export default defineConfig({
     antd: {},
@@ -9,10 +9,16 @@ export default defineConfig({
     layout: {
         title: 'React Tarui Template',
     },
+    proxy: {
+        '/api/v1': {
+            'target': 'http://super.itmeng.top',
+            'changeOrigin': true,
+        },
+    },
     routes: [
         {
             path: '/',
-            redirect: '/login',
+            redirect: '/home',
         },
         {
             name: '登陆',
@@ -24,16 +30,13 @@ export default defineConfig({
             name: '首页',
             path: '/home',
             component: './Home',
+            wrappers: ["@/wrappers/auth"],
         },
         {
             name: '权限演示',
             path: '/access',
             component: './Access',
-        },
-        {
-            name: ' CRUD 示例',
-            path: '/table',
-            component: './Table',
+            wrappers: ["@/wrappers/auth"]
         },
     ],
     npmClient: 'pnpm',
